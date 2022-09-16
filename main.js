@@ -112,6 +112,44 @@ var SvgHome = function SvgHome(props) {
 
 /***/ }),
 
+/***/ "./assets/svg/Notification.svg":
+/*!*************************************!*\
+  !*** ./assets/svg/Notification.svg ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _path, _path2;
+
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+var SvgNotification = function SvgNotification(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", _extends({
+    width: 19,
+    height: 21,
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), _path || (_path = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    d: "M17.594 10.13c-.761-.888-1.107-1.658-1.107-2.967V6.72c0-1.705-.392-2.804-1.245-3.902C13.927 1.111 11.713.083 9.547.083h-.092c-2.122 0-4.266.98-5.603 2.618-.9 1.12-1.338 2.266-1.338 4.018v.444c0 1.309-.323 2.079-1.107 2.967-.576.655-.76 1.496-.76 2.407s.299 1.775.9 2.477a4.72 4.72 0 0 0 3.02 1.472 43.39 43.39 0 0 0 4.934.257c1.66 0 3.296-.118 4.934-.257a4.72 4.72 0 0 0 3.02-1.472c.6-.702.9-1.566.9-2.477 0-.91-.184-1.752-.761-2.407Z",
+    fill: "#fff"
+  })), _path2 || (_path2 = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    opacity: 0.4,
+    d: "M11.594 18.029c-.52-.111-3.694-.111-4.214 0-.445.102-.927.342-.927.866.026.5.319.942.725 1.223h-.001c.525.41 1.14.67 1.786.763.343.047.693.045 1.05 0a3.788 3.788 0 0 0 1.784-.762v-.002c.405-.28.698-.721.724-1.222 0-.524-.482-.764-.927-.866Z",
+    fill: "#fff"
+  })));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SvgNotification);
+
+/***/ }),
+
 /***/ "./assets/svg/Search.svg":
 /*!*******************************!*\
   !*** ./assets/svg/Search.svg ***!
@@ -334,17 +372,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _routes_Routes_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./routes/Routes.jsx */ "./app/routes/Routes.jsx");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "../node_modules/@mui/system/esm/ThemeProvider/ThemeProvider.js");
-/* harmony import */ var _theme_mainTheme_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./theme/mainTheme.js */ "./app/theme/mainTheme.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material */ "../node_modules/@mui/system/esm/ThemeProvider/ThemeProvider.js");
+/* harmony import */ var _components_Layout_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Layout.jsx */ "./app/components/Layout.jsx");
+/* harmony import */ var _theme_mainTheme_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./theme/mainTheme.js */ "./app/theme/mainTheme.js");
+
 
 
 
 
 
 var BukablePage = function BukablePage() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    theme: _theme_mainTheme_js__WEBPACK_IMPORTED_MODULE_2__["default"]
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_routes_Routes_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    theme: _theme_mainTheme_js__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Layout_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BukablePage);
@@ -644,7 +684,8 @@ var Header = function Header() {
     component: _assets_svg_bukableLogo_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
     inheritViewBox: true
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    direction: "row"
+    direction: "row",
+    spacing: "25px"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NotificationButton_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ProfileMenuButton_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_11__["default"], {
     sx: {
       borderColor: 'rgba(255, 255, 255, .1)',
@@ -669,21 +710,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material */ "../node_modules/@mui/material/IconButton/IconButton.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material */ "../node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material */ "../node_modules/@mui/material/IconButton/IconButton.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "../node_modules/@mui/material/SvgIcon/SvgIcon.js");
+/* harmony import */ var _assets_svg_Notification_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../assets/svg/Notification.svg */ "./assets/svg/Notification.svg");
 
 
-var NotificationIconPath = '../../../assets/img/Notification.png';
+
 
 var NotificationButton = function NotificationButton() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    sx: {
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
-      backgroundImage: 'url(../../../assets/img/Notification.png)',
-      width: '25px',
-      height: '25px'
-    }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: "iconButton"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    viewBox: '0 0 17 20',
+    component: _assets_svg_Notification_svg__WEBPACK_IMPORTED_MODULE_1__["default"]
   }));
 };
 
@@ -759,7 +798,7 @@ var ProfileMenuButton = function ProfileMenuButton() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
     alt: "Avatar",
-    src: "../../assets/img/avatar.png",
+    src: "./assets/img/avatar.png",
     sx: {
       height: '100%',
       width: '100%'
@@ -768,7 +807,7 @@ var ProfileMenuButton = function ProfileMenuButton() {
     sx: {
       height: '7px',
       width: '12px',
-      backgroundImage: 'url(../../assets/img/more.png)',
+      backgroundImage: 'url(./assets/img/more.png)',
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat'
     }
